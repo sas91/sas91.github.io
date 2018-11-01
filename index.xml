@@ -19,5 +19,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>A Hybrid Approach to Segmentation of Speech Using Signal Processing Cues and Hidden Markov Models</title>
+      <link>https://sas91.github.io/publication/ms-thesis/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/ms-thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Hybrid Approach to Segmentation of Speech Using Group Delay Processing and HMM Based Embedded Reestimation</title>
+      <link>https://sas91.github.io/publication/hybrid-segmentation/</link>
+      <pubDate>Sun, 14 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/hybrid-segmentation/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
