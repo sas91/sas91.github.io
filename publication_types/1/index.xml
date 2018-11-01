@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Building state-of-the-art distant speech recognition using the CHiME-4 challenge with a setup of speech enhancement baseline</title>
+      <link>https://sas91.github.io/publication/chime4-adv/</link>
+      <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/chime4-adv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Student-Teacher Learning for BLSTM Mask-based Speech Enhancement</title>
       <link>https://sas91.github.io/publication/st-learning-is18/</link>
       <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
@@ -22,20 +31,20 @@
     </item>
     
     <item>
-      <title>A Hybrid Approach to Segmentation of Speech Using Signal Processing Cues and Hidden Markov Models</title>
-      <link>https://sas91.github.io/publication/ms-thesis/</link>
-      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://sas91.github.io/publication/ms-thesis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>A Hybrid Approach to Segmentation of Speech Using Group Delay Processing and HMM Based Embedded Reestimation</title>
       <link>https://sas91.github.io/publication/hybrid-segmentation/</link>
       <pubDate>Sun, 14 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/hybrid-segmentation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Syllable Based Statistical Text to Speech System</title>
+      <link>https://sas91.github.io/publication/syllable-hts/</link>
+      <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/syllable-hts/</guid>
       <description></description>
     </item>
     

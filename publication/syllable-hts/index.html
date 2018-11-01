@@ -15,10 +15,10 @@
   
     
   
-  <meta name="description" content="">
+  <meta name="description" content="A statistical parametric speech synthesis system uses triphones, phones or full context phones to address the problem of co-articulation. In this paper, syllables are used as the basic units in the parametric synthesiser. Conventionally full context phones in a Hidden Markov Model (HMM) based speech synthesis framework are modeled with a fixed number of states. This is because each phoneme corresponds to a single indivisible sound. On the other hand a syllable is made up of a sequence of one or more sounds. To accommodate this variation, a variable number of states are used to model a syllable. Although a variable number of states are required to model syllables, a syllable captures co-articulation well since it is the smallest production unit. A syllable based speech synthesis system therefore does not require a well designed question set. The total number of syllables in a language is quite high and all of them cannot be modeled. To address this issue, a fallback unit is modeled instead. The quality of the proposed system is comparable to that of the phoneme based system in terms of DMOS and WER.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://sas91.github.io/publication/st-learning-is18/">
+  <link rel="alternate" hreflang="en-us" href="https://sas91.github.io/publication/syllable-hts/">
 
   
 
@@ -86,30 +86,30 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://sas91.github.io/publication/st-learning-is18/">
+  <link rel="canonical" href="https://sas91.github.io/publication/syllable-hts/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Aswin Subramanian">
-  <meta property="og:url" content="https://sas91.github.io/publication/st-learning-is18/">
-  <meta property="og:title" content="Student-Teacher Learning for BLSTM Mask-based Speech Enhancement | Aswin Subramanian">
-  <meta property="og:description" content="">
+  <meta property="og:url" content="https://sas91.github.io/publication/syllable-hts/">
+  <meta property="og:title" content="A Syllable Based Statistical Text to Speech System | Aswin Subramanian">
+  <meta property="og:description" content="A statistical parametric speech synthesis system uses triphones, phones or full context phones to address the problem of co-articulation. In this paper, syllables are used as the basic units in the parametric synthesiser. Conventionally full context phones in a Hidden Markov Model (HMM) based speech synthesis framework are modeled with a fixed number of states. This is because each phoneme corresponds to a single indivisible sound. On the other hand a syllable is made up of a sequence of one or more sounds. To accommodate this variation, a variable number of states are used to model a syllable. Although a variable number of states are required to model syllables, a syllable captures co-articulation well since it is the smallest production unit. A syllable based speech synthesis system therefore does not require a well designed question set. The total number of syllables in a language is quite high and all of them cannot be modeled. To address this issue, a fallback unit is modeled instead. The quality of the proposed system is comparable to that of the phoneme based system in terms of DMOS and WER.">
   
   
     
   <meta property="og:image" content="https://sas91.github.io/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2018-09-02T00:00:00&#43;00:00">
+  <meta property="article:published_time" content="2013-09-09T00:00:00&#43;00:00">
   
-  <meta property="article:modified_time" content="2018-09-02T00:00:00&#43;00:00">
-  
-
+  <meta property="article:modified_time" content="2013-09-09T00:00:00&#43;00:00">
   
 
   
 
-  <title>Student-Teacher Learning for BLSTM Mask-based Speech Enhancement | Aswin Subramanian</title>
+  
+
+  <title>A Syllable Based Statistical Text to Speech System | Aswin Subramanian</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
@@ -242,7 +242,7 @@
   
   
 <div class="article-container pt-3">
-  <h1 itemprop="name">Student-Teacher Learning for BLSTM Mask-based Speech Enhancement</h1>
+  <h1 itemprop="name">A Syllable Based Statistical Text to Speech System</h1>
 
   
 
@@ -256,13 +256,19 @@
   
   <div>
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Aswin Shanmugam Subramanian</span>
+      <span itemprop="name">Abhijit Pradhan</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Szu-Jui Chen</span>
+      <span itemprop="name">Aswin Shanmugam S</span>
     </span>, 
     <span itemscope itemprop="author" itemtype="http://schema.org/Person">
-      <span itemprop="name">Shinji Watanabe</span>
+      <span itemprop="name">Anusha Prakash</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Kamakoti Veezhinathan</span>
+    </span>, 
+    <span itemscope itemprop="author" itemtype="http://schema.org/Person">
+      <span itemprop="name">Hema Murthy</span>
     </span>
     
   </div>
@@ -270,9 +276,9 @@
 
   <span class="article-date">
     
-    <meta content="2018-09-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-    <time datetime="2018-09-02 00:00:00 &#43;0000 UTC" itemprop="dateModified">
-      Sep 2, 2018
+    <meta content="2013-09-09 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+    <time datetime="2013-09-09 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+      Sep 9, 2013
     </time>
   </span>
   <span itemscope itemprop="publisher" itemtype="http://schema.org/Person">
@@ -292,35 +298,35 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Student-Teacher%20Learning%20for%20BLSTM%20Mask-based%20Speech%20Enhancement&amp;url=https%3a%2f%2fsas91.github.io%2fpublication%2fst-learning-is18%2f"
+         href="https://twitter.com/intent/tweet?text=A%20Syllable%20Based%20Statistical%20Text%20to%20Speech%20System&amp;url=https%3a%2f%2fsas91.github.io%2fpublication%2fsyllable-hts%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fsas91.github.io%2fpublication%2fst-learning-is18%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fsas91.github.io%2fpublication%2fsyllable-hts%2f"
          target="_blank" rel="noopener">
         <i class="fab fa-facebook-f"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsas91.github.io%2fpublication%2fst-learning-is18%2f&amp;title=Student-Teacher%20Learning%20for%20BLSTM%20Mask-based%20Speech%20Enhancement"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fsas91.github.io%2fpublication%2fsyllable-hts%2f&amp;title=A%20Syllable%20Based%20Statistical%20Text%20to%20Speech%20System"
          target="_blank" rel="noopener">
         <i class="fab fa-linkedin-in"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fsas91.github.io%2fpublication%2fst-learning-is18%2f&amp;title=Student-Teacher%20Learning%20for%20BLSTM%20Mask-based%20Speech%20Enhancement"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fsas91.github.io%2fpublication%2fsyllable-hts%2f&amp;title=A%20Syllable%20Based%20Statistical%20Text%20to%20Speech%20System"
          target="_blank" rel="noopener">
         <i class="fab fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Student-Teacher%20Learning%20for%20BLSTM%20Mask-based%20Speech%20Enhancement&amp;body=https%3a%2f%2fsas91.github.io%2fpublication%2fst-learning-is18%2f">
+         href="mailto:?subject=A%20Syllable%20Based%20Statistical%20Text%20to%20Speech%20System&amp;body=https%3a%2f%2fsas91.github.io%2fpublication%2fsyllable-hts%2f">
         <i class="fas fa-envelope"></i>
       </a>
     </li>
@@ -339,6 +345,9 @@
 
   <div class="article-container">
 
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract" itemprop="text">A statistical parametric speech synthesis system uses triphones, phones or full context phones to address the problem of co-articulation. In this paper, syllables are used as the basic units in the parametric synthesiser. Conventionally full context phones in a Hidden Markov Model (HMM) based speech synthesis framework are modeled with a fixed number of states. This is because each phoneme corresponds to a single indivisible sound. On the other hand a syllable is made up of a sequence of one or more sounds. To accommodate this variation, a variable number of states are used to model a syllable. Although a variable number of states are required to model syllables, a syllable captures co-articulation well since it is the smallest production unit. A syllable based speech synthesis system therefore does not require a well designed question set. The total number of syllables in a language is quite high and all of them cannot be modeled. To address this issue, a fallback unit is modeled instead. The quality of the proposed system is comparable to that of the phoneme based system in terms of DMOS and WER.</p>
     
 
     
@@ -367,7 +376,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">In the <em>19th Annual Conference of the International Speech Communication Association.</em> (ISCA Interspeech 2018)</div>
+          <div class="col-12 col-md-9">In the <em>21st European Signal Processing Conference</em> (EUSIPCO 2013)</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -381,7 +390,7 @@
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Date</div>
           <div class="col-12 col-md-9" itemprop="datePublished">
-            September, 2018
+            September, 2013
           </div>
         </div>
       </div>
@@ -410,7 +419,7 @@
   
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="/pdf/st-learning-is18_2440.pdf" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://www.eurasip.org/Proceedings/Eusipco/Eusipco2013/papers/1569738809.pdf" target="_blank" rel="noopener">
   PDF
 </a>
 
@@ -426,16 +435,8 @@
 
 
 
-<a class="btn btn-outline-primary my-1 mr-1" href="/publication/pdf/st-learning-is18_poster.pdf" target="_blank" rel="noopener">
-  Poster
-</a>
 
-
-
-
-
-
-<a class="btn btn-outline-primary my-1 mr-1" href="https://www.isca-speech.org/archive/Interspeech_2018/abstracts/2440.html" target="_blank" rel="noopener">
+<a class="btn btn-outline-primary my-1 mr-1" href="https://ieeexplore.ieee.org/abstract/document/6811425/" target="_blank" rel="noopener">
   Source Document
 </a>
 
@@ -464,51 +465,6 @@
 
 
 
-
-<div class="media author-card" itemscope itemtype="http://schema.org/Person">
-  
-  <img class="portrait mr-3" src="/img/portrait.jpg" itemprop="image" alt="Avatar">
-  
-  <div class="media-body">
-    <h5 class="card-title" itemprop="name"><a href="/">Aswin Shanmugam Subramanian</a></h5>
-    <h6 class="card-subtitle">PhD Student</h6>
-    
-    <ul class="network-icon" aria-hidden="true">
-      
-      
-      
-      
-      
-      
-      <li>
-        <a itemprop="sameAs" href="mailto:aswin@jhu.edu" target="_blank" rel="noopener">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-      <li>
-        <a itemprop="sameAs" href="https://scholar.google.com/citations?user=yug24TgAAAAJ&amp;hl=en" target="_blank" rel="noopener">
-          <i class="ai ai-google-scholar"></i>
-        </a>
-      </li>
-      
-      
-      
-      
-      
-      
-      <li>
-        <a itemprop="sameAs" href="//github.com/sas91" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-      
-    </ul>
-  </div>
-</div>
 
 
 
