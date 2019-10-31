@@ -11,6 +11,24 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Generalized Weighted-Prediction-Error Dereverberation with Varying Source Priors for Reverberant Speech Recognition</title>
+      <link>https://sas91.github.io/publication/yj-waspaa19/</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/yj-waspaa19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speech Enhancement Using End-to-End Speech Recognition Objectives</title>
+      <link>https://sas91.github.io/publication/e2e-waspaa19/</link>
+      <pubDate>Sun, 20 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/e2e-waspaa19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Building state-of-the-art distant speech recognition using the CHiME-4 challenge with a setup of speech enhancement baseline</title>
       <link>https://sas91.github.io/publication/chime4-adv/</link>
       <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
