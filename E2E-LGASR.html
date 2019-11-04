@@ -1,100 +1,184 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
+
 <html>
-	<head>
-		<title>FAR-FIELD LOCATION GUIDED TARGET SPEECH EXTRACTION USING END-TO-END SPEECH RECOGNITION OBJECTIVES</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+    <head>
+        <meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> 
+        
+        <meta name="description" content="Audio-Visual Demos">
+        <meta name="author" content="Ke Tan">
+        
+	    <title>Audio-Visual Demos</title>
+        
+        <!-- Bootflat CSS -->
+        <link rel="stylesheet" href="css/bootflat.css">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h2>FAR-FIELD LOCATION GUIDED TARGET SPEECH EXTRACTION USING END-TO-END SPEECH RECOGNITION OBJECTIVES'</h2>
-											<p>Authors: Aswin Shanmugam Subramanian, Chao Weng, Shi-Xiong Zhang, Meng Yu, Yong Xu, Shinji Watanabe, Dong Yu</p>
-										</header>
-										<p>Abstract:
-										Target speech extraction is a specific case of source separation where an auxiliary information like the location or some pre-saved anchor speech examples of the target speaker is used to resolve the permutation ambiguity. Traditionally such systems are optimized based on signal reconstruction objectives. Recently end-to-end automatic speech recognition (ASR) methods have enabled to optimize source separation systems with only the transcription based objective. This paper proposes a method to jointly optimize a location guided target speech extraction module along with a speech recognition module only with ASR error minimization criteria. Experimental comparisons with corresponding conventional pipeline systems verify that this task can be realized by end-to-end ASR training objectives without using parallel clean data. We show promising target speech recognition results in mixtures of two speakers and noise, and discuss interesting properties of the proposed system in terms of speech enhancement/separation objectives and word error rates. Finally, we design a system that can take both location and anchor speech as input at the same time and show that the performance can be further improved.
-										</p>
-										<!--
-										<ul class="actions">
-											<li><a href="#" class="button big">Learn More</a></li>
-										</ul>-->
-									</div>
-									<span class="image object" style="background-size: contain; background-repeat: no-repeat">
-										<img src="images/diagram-20191008.png" style="background-repeat:no-repeat; background-size:contain" width="50%" alt=""/>
-									</span>
-								</section>
+        <!-- Custom CSS -->
+        <link href="css/index.css" rel="stylesheet">
 
-							<!-- Section -->
-								<section id="details">
-									<header class="major">
-										<h2>Details</h2>
-									</header>
-									<div class="features">
-										<article>
-											<div class="content">
-												<h3>Dataset</h3>
-												<p>Simulated Using WSJ Corpus.</p>
-											</div>
-										</article>
-										<article>
-											<div class="content">
-												<h3>Simulation</h3>
-												<p>We use a 6-element circular array</p>
-											</div>
-										</article>
-									</div>
-								</section>
+        <!-- Custom Fonts -->
+        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    </head>
 
-
-						</div>
-					</div>
-
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-							<!-- Search
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-							-->
-							<!-- Menu -->
-
-
-								<footer id="footer">
-									<p class="copyright">
-										<center>© Oct. 2019 </center>
-										<img src="images/tencent_icon.png" height="50px" alt="">
-									</p>
-
-								</footer>
-						</div>
-					</div>
-
+    
+    <body>
+        <div id="container">
+            <div id="paper_title"> <h1>Far-Field Location Guided Target Speech Extraction using <br> End-to-End Speech Recognition Objectives</h1> </div>
+            <div id="paper_authors"> <b>Authors:</b> Aswin Shanmugam Subramanian, Chao Weng, Meng Yu, Shi-Xiong Zhang, Yong Xu, Shinji Watanabe and Dong Yu</div>
+            <div id="paper_abstract"> <b>Abstract:</b> Target speech extraction is a specific case of source separation where an auxiliary information like the location or some pre-saved anchor speech examples of the target speaker is used to resolve the permutation ambiguity. Traditionally such systems are optimized based on signal reconstruction objectives.  Recently end-to-end automatic speech recognition (ASR) methods have enabled to optimize source separation systems with only the transcription based objective.  This paper proposes a method to jointly optimize a location guided target speech extraction module along with a speech recognition module only with ASR error minimization criteria.  Experimental comparisons with corresponding conventional pipeline systems verify that this task can be realized by end-to-end ASR training objectives without using parallel clean data. We show promising target speech recognition results in mixtures of two speakers and noise, and discuss interesting properties of the proposed system in terms of speech enhancement/separation objectives and word error rates. Finally, we design a system that can take both location and anchor speech as input at the same time and show that the performance can be further improved. </div>
+           <!-- 
+            <div id="description">
+                <h3>Our proposed architecture</h3>
+                <a><img src="img/architecture.png" width="100%" id="architecture"/></a>
+                <div id="architecture_caption"><b>Fig. 1. Our proposed network architecture.</b></div>          
+            </div>
+            -->
+            <div id="demos">
+                <h3>Audio Demos</h3>
+                
+                <h4>I. High Noise Samples</h4>
+                <table class="audio_demos">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center;">Method</th>
+                            <th style="text-align:center;">Sample 1</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Unprocessed Mixture</b>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/input_ch1/440c0207_446c0210_air-3_ain-4.CH1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Ground Truth</b>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/s1_clean/440c0207_446c0210_air-3_ain-4.S1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>Pipeline</b>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/pipeline/440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>E2E MVDR-1</b>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR1/440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>E2E MVDR-2</b>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR2/440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>E2E GDR</b>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-GDR/440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>E2E LCMV</b>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-LCMV/440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>E2E MVDR-2 + PF</b>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR2+post/440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>E2E MVDR-2 + PF + FT</b>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR2+post+FT/440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>E2E MVDR-2 + AS + FT</b>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR2+AS+FT/440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                        <tr style="border-top:1px solid black">
+                            <td>
+                                <b>E2E MVDR-2 + AS + PF + FT</b>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR2+AS+post+FT/440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        
+        <div id="footer">
+            <div>
+                <i>&copy October 2019</i><br>
+		<img src="img/tencent_icon.png" height="50px" alt="">
+		<img src="img/JHU_logo.jpg" height="50px" alt="">
+            </div>
+	    <!--
+			<div style="display:inline-block;width:240px;">
+	            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=nTaFtZPYUn89zwQhD9zpswUR2BW5OqbAcpOeLX3H118&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
 			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+	     -->
+		</div>
+        
+        
+    
+    </body>
 </html>
