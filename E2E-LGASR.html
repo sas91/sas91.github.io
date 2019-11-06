@@ -9,7 +9,7 @@
         <meta name="description" content="E2E Location Guided ASR - Audio Demo">
         <meta name="author" content="Ke Tan">
         
-	    <title>Audio-Visual Demos</title>
+	    <title>E2E Location Guided ASR - Audio Demo</title>
         
         <!-- Bootflat CSS -->
         <link rel="stylesheet" href="css/bootflat.css">
@@ -41,33 +41,56 @@
             <div id="demos">
                 <h3>Audio Demos</h3>
                 
-                <h4>I. High Noise Samples</h4>
+                <!--<h4>I. High Noise Samples (SNR - 0dB)</h4>-->
+                <h6>Legend: TA - Target Angle, IA - Intereference Angle, NA - Noise Angle, PF - Postfiltering, AS - Anchor Speech, FT - Fine Tuning.</h6>
                 <table class="audio_demos">
                     <thead>
                         <tr>
                             <th style="text-align:center;">Method</th>
-                            <th style="text-align:center;">Sample 1</th>
+                            <th style="text-align:center;">Sample 1 (SIR - 0dB, SNR - 0dB) <br> TA - 215, IA - 290, NA - 48</th>
+                            <th style="text-align:center;">Sample 2 (SIR - -5dB, SNR - 0dB) <br> TA - 175, IA - 252, NA - 326</th>
+                            <th style="text-align:center;">Sample 3 (SIR - 5dB, SNR - 20dB) <br> TA - 236, IA - 242, NA - 284</th>
                         </tr>
                     </thead>
                     
                     <tbody>
                         <tr style="border-top:1px solid black">
-                            <td>
-                                <b>Unprocessed Mixture</b>
+                            <td style="padding:0 35px 0 35px;">
+                                <b>Unprocessed Mixture (Ch-1)</b>
+                            </td>
+                            <td style="padding:0 25px 0 25px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/input_ch1/440c0207_446c0210_air-3_ain-4.CH1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td style="padding:0 25px 0 25px;">
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/input_ch1/444c020h_441c0215_air-3_ain-4.CH1.wav" type="audio/wav">
+                                </audio>
                             </td>
                             <td>
                                 <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/input_ch1/440c0207_446c0210_air-3_ain-4.CH1.wav" type="audio/wav">
+                                    <source src="audio/LN/input_ch1/443o0311_440o030g_air-1_ain-3.CH1.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
-                                <b>Ground Truth</b>
+                                <b>Ground Truth (Dry)</b>
                             </td>
                             <td>
                                 <audio controls class="audio-player" preload="metadata" style="width: 240px;">
                                     <source src="audio/HN/s1_clean/440c0207_446c0210_air-3_ain-4.S1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/s1_clean/444c020h_441c0215_air-3_ain-4.S1.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/LN/s1_clean/443o0311_440o030g_air-1_ain-3.S1.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -80,6 +103,16 @@
                                     <source src="audio/HN/pipeline/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/pipeline/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/LN/pipeline/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -88,6 +121,16 @@
                             <td>
                                 <audio controls class="audio-player" preload="metadata" style="width: 240px;">
                                     <source src="audio/HN/E2E-MVDR1/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR1/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/LN/E2E-MVDR1/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -100,6 +143,16 @@
                                     <source src="audio/HN/E2E-MVDR2/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR2/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/LN/E2E-MVDR2/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -108,6 +161,16 @@
                             <td>
                                 <audio controls class="audio-player" preload="metadata" style="width: 240px;">
                                     <source src="audio/HN/E2E-GDR/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-GDR/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/LN/E2E-GDR/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -120,6 +183,16 @@
                                     <source src="audio/HN/E2E-LCMV/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-LCMV/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/LN/E2E-LCMV/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
                         <tr style="border-top:1px solid black">
                             <td>
@@ -130,7 +203,18 @@
                                     <source src="audio/HN/E2E-MVDR2+post/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR2+post/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/LN/E2E-MVDR2+post/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
+			<!--
                         <tr style="border-top:1px solid black">
                             <td>
                                 <b>E2E MVDR-2 + PF + FT</b>
@@ -140,7 +224,13 @@
                                     <source src="audio/HN/E2E-MVDR2+post+FT/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
                                 </audio>
                             </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR2+post+FT/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
                         </tr>
+			-->
                         <tr style="border-top:1px solid black">
                             <td>
                                 <b>E2E MVDR-2 + AS + FT</b>
@@ -148,6 +238,16 @@
                             <td>
                                 <audio controls class="audio-player" preload="metadata" style="width: 240px;">
                                     <source src="audio/HN/E2E-MVDR2+AS+FT/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR2+AS+FT/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/LN/E2E-MVDR2+AS+FT/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
@@ -158,6 +258,16 @@
                             <td>
                                 <audio controls class="audio-player" preload="metadata" style="width: 240px;">
                                     <source src="audio/HN/E2E-MVDR2+AS+post+FT/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/HN/E2E-MVDR2+AS+post+FT/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
+                                </audio>
+                            </td>
+                            <td>
+                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
+                                    <source src="audio/LN/E2E-MVDR2+AS+post+FT/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
                                 </audio>
                             </td>
                         </tr>
