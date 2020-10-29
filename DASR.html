@@ -1,294 +1,3 @@
-<!DOCTYPE html>
-
-<html>
-
-        <meta charset="utf-8">
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> 
-        
-        <meta name="description" content="E2E Location Guided ASR - Audio Demo">
-        <meta name="author" content="Aswin Subramanian">
-        
-	    <title>E2E Location Guided ASR - Audio Demo</title>
-        
-        <!-- Bootflat CSS -->
-        <link rel="stylesheet" href="css/bootflat.css">
-
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom CSS -->
-        <link href="css/index.css" rel="stylesheet">
-
-        <!-- Custom Fonts -->
-        <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    </head>
-
-    
-    <body>
-        <div id="container">
-            <div id="paper_title"> <h1>Far-Field Location Guided Target Speech Extraction using <br> End-to-End Speech Recognition Objectives</h1> </div>
-            <div id="paper_authors"> <b>Authors:</b> Aswin Shanmugam Subramanian, Chao Weng, Shinji Watanabe, Meng Yu, Shi-Xiong Zhang, Yong Xu, and Dong Yu</div>
-            <div id="paper_abstract"> <b>Abstract:</b> Target speech extraction is a specific case of source separation where an auxiliary information like the location or some pre-saved anchor speech examples of the target speaker is used to resolve the permutation ambiguity. Traditionally such systems are optimized based on signal reconstruction objectives.  Recently end-to-end automatic speech recognition (ASR) methods have enabled to optimize source separation systems with only the transcription based objective.  This paper proposes a method to jointly optimize a location guided target speech extraction module along with a speech recognition module only with ASR error minimization criteria.  Experimental comparisons with corresponding conventional pipeline systems verify that this task can be realized by end-to-end ASR training objectives without using parallel clean data. We show promising target speech recognition results in mixtures of two speakers and noise, and discuss interesting properties of the proposed system in terms of speech enhancement/separation objectives and word error rates. Finally, we design a system that can take both location and anchor speech as input at the same time and show that the performance can be further improved. </div>
-           <!-- 
-            <div id="description">
-                <h3>Our proposed architecture</h3>
-                <a><img src="img/architecture.png" width="100%" id="architecture"/></a>
-                <div id="architecture_caption"><b>Fig. 1. Our proposed network architecture.</b></div>          
-            </div>
-            -->
-            <div id="demos">
-                <h3>Audio Demos</h3>
-                
-                <!--<h4>I. High Noise Samples (SNR - 0dB)</h4>-->
-                <h6>Legend: TA - Target Angle, IA - Intereference Angle, NA - Noise Angle, PF - Postfiltering, AS - Anchor Speech, FT - Fine Tuning.</h6>
-                <table class="audio_demos">
-                    <thead>
-                        <tr>
-                            <th style="text-align:center;">Method</th>
-                            <th style="text-align:center;">Sample 1 (SIR - 0dB, SNR - 0dB) <br> TA - 215, IA - 290, NA - 48</th>
-                            <th style="text-align:center;">Sample 2 (SIR - -5dB, SNR - 0dB) <br> TA - 175, IA - 252, NA - 326</th>
-                            <th style="text-align:center;">Sample 3 (SIR - 5dB, SNR - 20dB) <br> TA - 236, IA - 242, NA - 284</th>
-                        </tr>
-                    </thead>
-                    
-                    <tbody>
-                        <tr style="border-top:1px solid black">
-                            <td style="padding:0 35px 0 35px;">
-                                <b>Unprocessed Mixture (Ch-1)</b>
-                            </td>
-                            <td style="padding:0 20px 0 20px;">
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/input_ch1/440c0207_446c0210_air-3_ain-4.CH1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td style="padding:0 20px 0 20px;">
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/input_ch1/444c020h_441c0215_air-3_ain-4.CH1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td style="padding:0 20px 0 20px;">
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/LN/input_ch1/443o0311_440o030g_air-1_ain-3.CH1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>Ground Truth (Dry)</b>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/s1_clean/440c0207_446c0210_air-3_ain-4.S1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/s1_clean/444c020h_441c0215_air-3_ain-4.S1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/LN/s1_clean/443o0311_440o030g_air-1_ain-3.S1.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>Pipeline</b>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/pipeline/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/pipeline/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/LN/pipeline/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>E2E MVDR-1</b>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR1/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR1/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/LN/E2E-MVDR1/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>E2E MVDR-2</b>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR2/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR2/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/LN/E2E-MVDR2/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>E2E GDR</b>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-GDR/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-GDR/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/LN/E2E-GDR/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>E2E LCMV</b>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-LCMV/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-LCMV/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/LN/E2E-LCMV/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>E2E MVDR-2 + PF</b>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR2+post/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR2+post/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/LN/E2E-MVDR2+post/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-			<!--
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>E2E MVDR-2 + PF + FT</b>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR2+post+FT/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR2+post+FT/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-			-->
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>E2E MVDR-2 + AS + FT</b>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR2+AS+FT/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR2+AS+FT/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/LN/E2E-MVDR2+AS+FT/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                        <tr style="border-top:1px solid black">
-                            <td>
-                                <b>E2E MVDR-2 + AS + PF + FT</b>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR2+AS+post+FT/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/HN/E2E-MVDR2+AS+post+FT/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                            <td>
-                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">
-                                    <source src="audio/LN/E2E-MVDR2+AS+post+FT/443_440_443o0311_440o030g_air-1_ain-3.wav" type="audio/wav">
-                                </audio>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-        </div>
-        
-        <div id="footer">
-            <div>
-                <i>&copy October 2019</i><br>
-		<img src="img/tencent_icon.png" height="50px" alt="">
-		<img src="img/JHU_logo.jpg" height="50px" alt="">
-            </div>
-	    <!--
-			<div style="display:inline-block;width:240px;">
-	            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=nTaFtZPYUn89zwQhD9zpswUR2BW5OqbAcpOeLX3H118&co=2d78ad&ct=ffffff&cmo=3acc3a&cmn=ff5353'></script>
-			</div>
-	     -->
-		</div>
-        
-        
-    
-    </body>
-</html>
+<!DOCTYPE html><html>  <head>    <meta http-equiv="content-type" content="text/html; charset=utf-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">    <meta name="description" content="E2E Location Guided ASR - Audio Demo">    <meta name="author" content="Aswin Subramanian">    <title>Directional ASR</title>    <!-- Bootflat CSS -->    <link rel="stylesheet" href="css/bootflat.css">    <!-- Bootstrap Core CSS -->    <link href="css/bootstrap.min.css" rel="stylesheet">    <!-- Custom CSS -->    <link href="css/index.css" rel="stylesheet">    <!-- Custom Fonts -->    <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"      rel="stylesheet"      type="text/css">  </head>  <body>    <div id="container">      <div id="paper_title">        <h2>          <meta charset="utf-8">          DIRECTIONAL ASR: A NEW PARADIGM FOR E2E MULTI-SPEAKER SPEECH          RECOGNITION WITH SOURCE LOCALIZATION</h2>      </div>      <div id="paper_authors">        <h4> <b>Authors:</b> <em>Aswin Shanmugam Subramanian, Chao Weng,            Shinji Watanabe, Meng Yu, Yong Xu, Shi-Xiong Zhang, and Dong Yu</em></h4>      </div>      <em> </em>      <div id="demos"><em> </em>        <h3 style="text-align: center;">Audio Demos</h3>        <br>        <table class="audio_demos">          <thead>            <tr>              <th style="text-align:center;"><em>Method</em></th>              <th style="text-align: center"><em>Sample 1</em></th>              <th style="text-align: center"><em>Sample 2</em></th>              <th style="text-align: center"><em>Sample 3</em></th>            </tr>          </thead>          <tbody>            <tr style="border-top:1px solid black">              <td style="padding:0 35px 0 35px;"> <b>Input Mixture (Ch-1)</b> </td>              <td style="padding: 0px 20px; width: 380px;"> <audio controls="controls"                  class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/40_RIR-40_spk1-307_spk2-245_444c0212_445o030t.CH0.wav"                    type="audio/wav">                </audio> </td>              <td style="padding:0 20px 0 20px; width: 380px;"> <audio controls="controls"                  class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/595_RIR-595_spk1-124_spk2-151_440c0213_445o030k.CH0.wav"                    type="audio/wav">                </audio> </td>              <td style="padding:0 20px 0 20px; width: 380px;"> <audio controls="controls"                  class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/520_RIR-520_spk1-324_spk2-77_440o030k_441c020l.CH0.wav"                    type="audio/wav">                </audio> </td>            </tr>            <tr style="border-top:1px solid black">              <td rowspan="2" colspan="1"> <b>Ground Truth (Dry)</b> </td>              <td> <audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/40_RIR-40_spk1-307_spk2-245_444c0212_445o030t.S0.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify"><b>REF1:</b>                  realized capital gains increased forty two percent to nine                  hundred nine million dollars from six hundred forty point nine                  million dollars</p>                <p class="MsoNormal" style="text-align: justify"><b>Ref Location                    1:</b> 307 degrees</p>              </td>              <td style="text-align: center;"> <audio controls="controls" class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/595_RIR-595_spk1-124_spk2-151_440c0213_445o030k.S0.wav"                    type="audio/wav">                </audio><br>                <div style="text-align: justify; margin-left: 21px;"><b>REF1:</b>                  he said such products would be marketed by other companies                  with experience in that business<o:p></o:p> </div>                <p class="MsoNormal" style="text-align: justify"><b>Ref Location                    1:</b> 124 degrees</p>                <br>              </td>              <td style="text-align: center;"> <audio controls="controls" class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/520_RIR-520_spk1-324_spk2-77_440o030k_441c020l.S0.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><strong>REF1:                  </strong>coniston partners of new york said it has a six point                  eight percent stake in gillette and may seek to acquire the                  company or gain seats on its board .period<o:p></o:p></p>                <p class="MsoNormal" style="text-align: justify"><b>Ref Location                    1:</b> 324 degrees</p>              </td>            </tr>            <tr>              <td> <audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/40_RIR-40_spk1-307_spk2-245_444c0212_445o030t.S1.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><b>REF2:</b>                  but even before the stock market's crash ,comma fed chairman                  greenspan saw no signs of high inflation .period</p>                <p class="MsoNormal" style="text-align: justify"><b>Ref Location                    2: </b>245 degrees<br>                  <o:p></o:p></p>              </td>              <td><audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/595_RIR-595_spk1-124_spk2-151_440c0213_445o030k.S1.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"><b>REF2:</b>                  the diversified utility provides gas and electric services in                  pennsylvania .period<o:p></o:p></p>                <p class="MsoNormal" style="text-align: justify"><b>Ref Location                    2: </b>151 degrees</p>              </td>              <td style="text-align: center;"> <audio controls="controls" class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/520_RIR-520_spk1-324_spk2-77_440o030k_441c020l.S1.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><strong>REF2:                  </strong>those identified as beneficial owners hold at least                  ten percent of a company's equity securities </p>                <p class="MsoNormal" style="text-align: justify"><b>Ref Location                    2:</b> 77 degrees</p>                <p class="MsoNormal" style="text-align: justify"></p>              </td>            </tr>            <tr style="border-top:1px solid black">              <td rowspan="2" colspan="1"> <b><em>Oracle</em> Binary Mask</b> </td>              <td> <audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/444_445_40_RIR-40_spk1-307_spk2-245_444c0212_445o030t-2-IBM.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"><b>HYP1:</b>                  realized capital gains increased forty two percent to nine                  hundred nine million dollars from six hundred forty point nine                  million dollars</p>              </td>              <td> <audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_445_595_RIR-595_spk1-124_spk2-151_440c0213_445o030k-1-IBM.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"><b>HYP1:</b>                  he said such products would be marketed by other companies                  with experience in that business</p>              </td>              <td style="text-align: center;"> <audio controls="controls" class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_441_520_RIR-520_spk1-324_spk2-77_440o030k_441c020l-1-IBM.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><strong>HYP1:                  </strong>coniston partners of new york said it has a six point                  eight percent stake in gillette and may seek to acquire the                  company or gain seats on its board .period</p>              </td>            </tr>            <tr>              <td> <audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/444_445_40_RIR-40_spk1-307_spk2-245_444c0212_445o030t-1-IBM.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"> <b>HYP2:</b>                  but even before the stock market's crash ,comma <span style="color: red;">said</span>                  chairman greenspan saw no signs of high inflation .period</p>              </td>              <td><audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_445_595_RIR-595_spk1-124_spk2-151_440c0213_445o030k-2-IBM.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"> <b>HYP2:</b>                  the diversified utility provides gas and electric services <span                    style="color: red;">and</span>                  pennsylvania .period </p>              </td>              <td style="text-align: center;"><audio controls="controls" class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_441_520_RIR-520_spk1-324_spk2-77_440o030k_441c020l-2-IBM.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><strong>HYP2:                  </strong>those identified as beneficial owners hold at least                  ten percent of a company's equity securities</p>              </td>            </tr>            <tr style="border-top:1px solid black">              <td rowspan="2" colspan="1"> <em><b>Oracle </b></em><b>DOA</b><em><b>                    Mask</b></em> </td>              <td> <audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/444_445_40_RIR-40_spk1-307_spk2-245_444c0212_445o030t-2-DOAM.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"><b>HYP1:</b>                  realized capital gains increased forty two percent to nine                  hundred nine million dollars from six hundred forty point nine                  million dollars</p>              </td>              <td><audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_445_595_RIR-595_spk1-124_spk2-151_440c0213_445o030k-1-DOAM.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"><b>HYP1:</b>                  he said such products would be marketed by other companies                  with experience in that business</p>              </td>              <td style="text-align: center;"> <audio controls="controls" class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_441_520_RIR-520_spk1-324_spk2-77_440o030k_441c020l-2-DOAM.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><strong>HYP1:                  </strong>coniston partners of new york said it has a six point                  eight percent stake in <span style="color: red;">july</span>                  and may seek to acquire the company or gain seats on its board                  .period</p>              </td>            </tr>            <tr>              <td><audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/444_445_40_RIR-40_spk1-307_spk2-245_444c0212_445o030t-1-DOAM.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"><b>HYP2:</b>                  but even before the stock market's crash ,comma <span style="color: red;">said</span>                  chairman greenspan saw no signs of high inflation .period </p>              </td>              <td><audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_445_595_RIR-595_spk1-124_spk2-151_440c0213_445o030k-2-DOAM.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"> <b>HYP2:</b>                  the diversified utility provides gas and electric services in                  pennsylvania .period </p>              </td>              <td style="text-align: center;"><audio controls="controls" class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_441_520_RIR-520_spk1-324_spk2-77_440o030k_441c020l-1-DOAM.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><strong>HYP2:                  </strong>those identified as beneficial owners hold at least                  ten percent of <span style="color: red;">the</span> company's                  equity securities</p>              </td>            </tr>            <tr style="border-top:1px solid black">              <td rowspan="2" colspan="1"><strong>MIMO-Speech</strong></td>              <td> <audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/444_445_40_RIR-40_spk1-307_spk2-245_444c0212_445o030t-2-MIMO.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"><b>HYP1:</b>                  realized capital gains increased forty two percent to nine                  hundred nine million dollars from six hundred forty point nine                  million dollars</p>              </td>              <td><audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_445_595_RIR-595_spk1-124_spk2-151_440c0213_445o030k-2-MIMO.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"><b>HYP1:</b> <span                    style="color: red;">they</span>&nbsp;
+                  said such products would be marketed <span style="color: red;">to</span>                  other companies with experience in that business</p>              </td>              <td style="text-align: center;"> <audio controls="controls" class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_441_520_RIR-520_spk1-324_spk2-77_440o030k_441c020l-1-MIMO.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><strong>HYP1:                  </strong>coniston partners of new york said it has a six point                  eight percent stake in <span style="color: red;">july</span>                  and may seek to acquire the company or gain seats on its board                  .period</p>              </td>            </tr>            <tr>              <td><audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/444_445_40_RIR-40_spk1-307_spk2-245_444c0212_445o030t-1-MIMO.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"><b>HYP2:</b>                  but even before the stock market's crash ,comma <span style="color: red;">said</span>                  chairman greenspan <span style="color: red;">stalled</span>                  no signs of high inflation .period</p>              </td>              <td><audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_445_595_RIR-595_spk1-124_spk2-151_440c0213_445o030k-1-MIMO.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"> <b>HYP2:</b>                  <span style="color: red;">in</span> the <span style="color: red;">new
+                    york office martin white states</span> and electric services                  in <span style="color: red;">the northeast and the u. s.</span>                  .period<o:p></o:p></p>              </td>              <td style="text-align: center;"><audio controls="controls" class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_441_520_RIR-520_spk1-324_spk2-77_440o030k_441c020l-2-MIMO.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><strong>HYP2:                  </strong>those identified as beneficial owners hold at least                  ten percent of <span style="color: red;">the</span> company's                  equity securities</p>              </td>            </tr>            <tr style="border-top:1px solid black">              <td rowspan="2" colspan="1"> <b>D-ASR</b> </td>              <td> <audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/444_445_40_RIR-40_spk1-307_spk2-245_444c0212_445o030t-1-DASR.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"><b>HYP1:</b>                  realized capital gains increased forty two percent to nine                  hundred nine million dollars from six hundred forty point nine                  million dollars</p>                <p class="MsoNormal" style="text-align: justify;"><b>Predicted                    Location 1:</b> 307 degrees</p>              </td>              <td><audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_445_595_RIR-595_spk1-124_spk2-151_440c0213_445o030k-2-DASR.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><b>HYP1:</b>                  he said such products would be marketed by other companies                  with experience in that business</p>                <p class="MsoNormal" style="text-align: justify;"> <b>Predicted                    Location 1:</b> 123 degrees</p>              </td>              <td style="text-align: center;"> <audio controls="controls" class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_441_520_RIR-520_spk1-324_spk2-77_440o030k_441c020l-2-DASR.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><strong>HYP1:                  </strong>coniston partners of new york said it has a six point                  eight percent stake in gillette and may seek to acquire the                  company or <span style="color: red;">gained</span> seats on                  its board .period</p>                <p class="MsoNormal" style="text-align: justify;"><b>Predicted                    Location 1:</b> 325 degrees</p>              </td>            </tr>            <tr>              <td><audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/444_445_40_RIR-40_spk1-307_spk2-245_444c0212_445o030t-2-DASR.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"><b>HYP2:</b>                  but even before the stock market's crash ,comma <span style="color: red;">said</span>                  chairman greenspan <span style="color: red;">slowed</span> no                  signs of high inflation .period</p>                <p class="MsoNormal" style="text-align: justify;"><b>Predicted                    Location 2:</b> 247 degrees</p>              </td>              <td><audio controls="controls" class="audio-player" preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_445_595_RIR-595_spk1-124_spk2-151_440c0213_445o030k-1-DASR.wav"                    type="audio/wav">                </audio><br>                <p class="MsoNormal" style="text-align: justify;"> <b>HYP2:</b>                  the <span style="color: red;">democrat survived</span>                  utility provides gas and electric services <span style="color: red;">and</span>                  pennsylvania .period </p>                <p class="MsoNormal" style="text-align: justify;"> <b>Predicted                    Location 2:</b> 149 degrees</p>              </td>              <td style="text-align: center;"><audio controls="controls" class="audio-player"                  preload="metadata"                  style="width: 240px;">                  <source src="audio/d-asr_samples/440_441_520_RIR-520_spk1-324_spk2-77_440o030k_441c020l-1-DASR.wav"                    type="audio/wav">                </audio>                <p class="MsoNormal" style="text-align: justify;"><strong>HYP2:                  </strong>those identified as beneficial owners hold at least                  ten percent of a company's equity securities</p>                <p class="MsoNormal" style="text-align: justify;"><b>Predicted                    Location 2:</b> 80 degrees</p>              </td>            </tr>            <!--                        <tr style="border-top:1px solid black">                            <td>                                <b>E2E MVDR-2 + PF + FT</b>                            </td>                            <td>                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">                                    <source src="audio/HN/E2E-MVDR2+post+FT/440_446_440c0207_446c0210_air-3_ain-4.wav" type="audio/wav">                                </audio>                            </td>                            <td>                                <audio controls class="audio-player" preload="metadata" style="width: 240px;">                                    <source src="audio/HN/E2E-MVDR2+post+FT/444_441_444c020h_441c0215_air-3_ain-4.wav" type="audio/wav">                                </audio>                            </td>                        </tr>			-->          </tbody>        </table>      </div>      <div id="footer">        <div> <i>© October 2020</i><br>          &nbsp; <img src="img/JHU_logo.jpg" alt="" height="50px"><img src="img/tencent_icon.png"            alt=""            height="50px"></div>      </div>    </div>  </body></html>
