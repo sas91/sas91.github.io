@@ -36,7 +36,7 @@
       <pubDate>Wed, 24 Oct 2018 00:00:00 -0400</pubDate>
       
       <guid>https://sas91.github.io/home/about/</guid>
-      <description>I am a graduate student at Johns Hopkins University, working in the Center for Language and Speech Processing (CLSP), advised by Prof. Shinji Watanabe. My research interests are in speech denoising, speech dereverberation, source separation, multi-source localization, robust speech recognition and end-to-end speech recognition.</description>
+      <description>I am a doctoral candidate at Johns Hopkins University, working in the Center for Language and Speech Processing (CLSP), advised by Prof. Shinji Watanabe. I am currently working on robust speech recognition in far-field, multi-talker scenarios. I focus on improving ASR with front-end processing like speech denoising, speech dereverberation, source separation, and multi-source localization. I recently proposed a paradigm called directional ASR.</description>
     </item>
     
     <item>
@@ -67,7 +67,7 @@
     </item>
     
     <item>
-      <title>Publications</title>
+      <title>Recent Publications</title>
       <link>https://sas91.github.io/home/publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
       

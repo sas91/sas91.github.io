@@ -20,16 +20,16 @@
     
     <url>
     
-      <loc>https://sas91.github.io/publication/espnet-se/</loc>
-      <lastmod>2021-01-19T00:00:00+00:00</lastmod>
+      <loc>https://sas91.github.io/publication/lft/</loc>
+      <lastmod>2021-01-20T00:00:00+00:00</lastmod>
     </url>
     
   
     
     <url>
     
-      <loc>https://sas91.github.io/publication/lft/</loc>
-      <lastmod>2021-01-15T00:00:00+00:00</lastmod>
+      <loc>https://sas91.github.io/publication/espnet-se/</loc>
+      <lastmod>2021-01-19T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -62,6 +62,14 @@
     
       <loc>https://sas91.github.io/publication/chime6-jhu/</loc>
       <lastmod>2020-05-04T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://sas91.github.io/publication/chime6-arxiv/</loc>
+      <lastmod>2020-05-02T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -245,7 +253,7 @@
     <url>
     
       <loc>https://sas91.github.io/publication_types/0/</loc>
-      <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+      <lastmod>2020-05-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -263,7 +271,7 @@
     <url>
     
       <loc>https://sas91.github.io/publication_types/2/</loc>
-      <lastmod>2021-01-15T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -289,7 +297,7 @@
     <url>
     
       <loc>https://sas91.github.io/publication_types/</loc>
-      <lastmod>2019-04-19T00:00:00+00:00</lastmod>
+      <lastmod>2020-05-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

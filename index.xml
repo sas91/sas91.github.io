@@ -29,20 +29,20 @@
     </item>
     
     <item>
+      <title>Deep Learning based Multi-Source Localization with Source Splitting and its Effectiveness in Multi-Talker Speech Recognition</title>
+      <link>https://sas91.github.io/publication/lft/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/lft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ESPnet-SE: End-to-End Speech Enhancement and Separation Toolkit Designed for ASR Integration</title>
       <link>https://sas91.github.io/publication/espnet-se/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/espnet-se/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deep Learning based Multi-Source Localization with Source Splitting and its Effectiveness in Multi-Talker Speech Recognition</title>
-      <link>https://sas91.github.io/publication/lft/</link>
-      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://sas91.github.io/publication/lft/</guid>
       <description></description>
     </item>
     
@@ -79,6 +79,15 @@
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/chime6-jhu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CHiME-6 Challenge: Tackling Multispeaker Speech Recognition for Unsegmented Recordings</title>
+      <link>https://sas91.github.io/publication/chime6-arxiv/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/chime6-arxiv/</guid>
       <description></description>
     </item>
     
@@ -133,15 +142,6 @@
       <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/chime5-hitachi-jhu/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Building state-of-the-art distant speech recognition using the CHiME-4 challenge with a setup of speech enhancement baseline</title>
-      <link>https://sas91.github.io/publication/chime4-adv/</link>
-      <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://sas91.github.io/publication/chime4-adv/</guid>
       <description></description>
     </item>
     

@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 19 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sas91.github.io/publication_types/0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CHiME-6 Challenge: Tackling Multispeaker Speech Recognition for Unsegmented Recordings</title>
+      <link>https://sas91.github.io/publication/chime6-arxiv/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/chime6-arxiv/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>An Investigation of End-to-End Multichannel Speech Recognition for Reverberant and Mismatch Conditions</title>

@@ -31,20 +31,20 @@
     </item>
     
     <item>
+      <title>Deep Learning based Multi-Source Localization with Source Splitting and its Effectiveness in Multi-Talker Speech Recognition</title>
+      <link>https://sas91.github.io/publication/lft/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/lft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ESPnet-SE: End-to-End Speech Enhancement and Separation Toolkit Designed for ASR Integration</title>
       <link>https://sas91.github.io/publication/espnet-se/</link>
       <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/espnet-se/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deep Learning based Multi-Source Localization with Source Splitting and its Effectiveness in Multi-Talker Speech Recognition</title>
-      <link>https://sas91.github.io/publication/lft/</link>
-      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://sas91.github.io/publication/lft/</guid>
       <description></description>
     </item>
     
@@ -81,6 +81,15 @@
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/chime6-jhu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CHiME-6 Challenge: Tackling Multispeaker Speech Recognition for Unsegmented Recordings</title>
+      <link>https://sas91.github.io/publication/chime6-arxiv/</link>
+      <pubDate>Sat, 02 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/chime6-arxiv/</guid>
       <description></description>
     </item>
     
