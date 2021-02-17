@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aswin Shanmugam Subramanian on Aswin Shanmugam Subramanian</title>
+    <title>Aswin Subramanian on Aswin Subramanian</title>
     <link>https://sas91.github.io/</link>
-    <description>Recent content in Aswin Shanmugam Subramanian on Aswin Shanmugam Subramanian</description>
+    <description>Recent content in Aswin Subramanian on Aswin Subramanian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
@@ -11,11 +11,74 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>The 2020 ESPnet Update: New Features, Broadened Applications, Performance Improvements, and Future Plans</title>
+      <link>https://sas91.github.io/publication/espnet-2020-update/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/espnet-2020-update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Directional ASR: A New Paradigm for E2E Multi-Speaker Speech Recognition with Source Localization</title>
       <link>https://sas91.github.io/publication/dasr/</link>
-      <pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/dasr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ESPnet-SE: End-to-End Speech Enhancement and Separation Toolkit Designed for ASR Integration</title>
+      <link>https://sas91.github.io/publication/espnet-se/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/espnet-se/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning based Multi-Source Localization with Source Splitting and its Effectiveness in Multi-Talker Speech Recognition</title>
+      <link>https://sas91.github.io/publication/lft/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/lft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>End-to-End ASR with Adaptive Span Self-Attention</title>
+      <link>https://sas91.github.io/publication/yj-is20/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/yj-is20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>End-to-End Far-Field Speech Recognition with Unified Dereverberation and Beamforming</title>
+      <link>https://sas91.github.io/publication/e2e-sjtu-is20/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/e2e-sjtu-is20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Significance of Spectral Cues in Automatic Speech Segmentation for Indian Language Speech Synthesizers</title>
+      <link>https://sas91.github.io/publication/hybrid_specom/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/hybrid_specom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The JHU Multi-Microphone Multi-Speaker ASR System for the CHiME-6 Challenge</title>
+      <link>https://sas91.github.io/publication/chime6-jhu/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/chime6-jhu/</guid>
       <description></description>
     </item>
     
@@ -56,6 +119,15 @@
     </item>
     
     <item>
+      <title>An Investigation of End-to-End Multichannel Speech Recognition for Reverberant and Mismatch Conditions</title>
+      <link>https://sas91.github.io/publication/e2e-arxiv/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/e2e-arxiv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The Hitachi/JHU CHiME-5 system: Advances in speech recognition for everyday home environments using multiple microphone arrays</title>
       <link>https://sas91.github.io/publication/chime5-hitachi-jhu/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
@@ -70,42 +142,6 @@
       <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/chime4-adv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Student-Teacher Learning for BLSTM Mask-based Speech Enhancement</title>
-      <link>https://sas91.github.io/publication/st-learning-is18/</link>
-      <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://sas91.github.io/publication/st-learning-is18/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Hybrid Approach to Segmentation of Speech Using Signal Processing Cues and Hidden Markov Models</title>
-      <link>https://sas91.github.io/publication/ms-thesis/</link>
-      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://sas91.github.io/publication/ms-thesis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Hybrid Approach to Segmentation of Speech Using Group Delay Processing and HMM Based Embedded Reestimation</title>
-      <link>https://sas91.github.io/publication/hybrid-segmentation/</link>
-      <pubDate>Sun, 14 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://sas91.github.io/publication/hybrid-segmentation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Syllable Based Statistical Text to Speech System</title>
-      <link>https://sas91.github.io/publication/syllable-hts/</link>
-      <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
-      
-      <guid>https://sas91.github.io/publication/syllable-hts/</guid>
       <description></description>
     </item>
     

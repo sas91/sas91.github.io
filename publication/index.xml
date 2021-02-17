@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publications on Aswin Shanmugam Subramanian</title>
+    <title>Publications on Aswin Subramanian</title>
     <link>https://sas91.github.io/publication/</link>
-    <description>Recent content in Publications on Aswin Shanmugam Subramanian</description>
+    <description>Recent content in Publications on Aswin Subramanian</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
@@ -13,11 +13,74 @@
     
     
     <item>
+      <title>The 2020 ESPnet Update: New Features, Broadened Applications, Performance Improvements, and Future Plans</title>
+      <link>https://sas91.github.io/publication/espnet-2020-update/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/espnet-2020-update/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Directional ASR: A New Paradigm for E2E Multi-Speaker Speech Recognition with Source Localization</title>
       <link>https://sas91.github.io/publication/dasr/</link>
-      <pubDate>Fri, 30 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/dasr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ESPnet-SE: End-to-End Speech Enhancement and Separation Toolkit Designed for ASR Integration</title>
+      <link>https://sas91.github.io/publication/espnet-se/</link>
+      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/espnet-se/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deep Learning based Multi-Source Localization with Source Splitting and its Effectiveness in Multi-Talker Speech Recognition</title>
+      <link>https://sas91.github.io/publication/lft/</link>
+      <pubDate>Fri, 15 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/lft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>End-to-End ASR with Adaptive Span Self-Attention</title>
+      <link>https://sas91.github.io/publication/yj-is20/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/yj-is20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>End-to-End Far-Field Speech Recognition with Unified Dereverberation and Beamforming</title>
+      <link>https://sas91.github.io/publication/e2e-sjtu-is20/</link>
+      <pubDate>Sun, 25 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/e2e-sjtu-is20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Significance of Spectral Cues in Automatic Speech Segmentation for Indian Language Speech Synthesizers</title>
+      <link>https://sas91.github.io/publication/hybrid_specom/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/hybrid_specom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The JHU Multi-Microphone Multi-Speaker ASR System for the CHiME-6 Challenge</title>
+      <link>https://sas91.github.io/publication/chime6-jhu/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/chime6-jhu/</guid>
       <description></description>
     </item>
     
@@ -58,6 +121,15 @@
     </item>
     
     <item>
+      <title>An Investigation of End-to-End Multichannel Speech Recognition for Reverberant and Mismatch Conditions</title>
+      <link>https://sas91.github.io/publication/e2e-arxiv/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/e2e-arxiv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The Hitachi/JHU CHiME-5 system: Advances in speech recognition for everyday home environments using multiple microphone arrays</title>
       <link>https://sas91.github.io/publication/chime5-hitachi-jhu/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
@@ -85,11 +157,56 @@
     </item>
     
     <item>
+      <title>TBT (Toolkit to Build TTS): A High Performance Framework to Build Multiple Language HTS Voice</title>
+      <link>https://sas91.github.io/publication/tbt-iitm/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/tbt-iitm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A Hybrid Approach to Segmentation of Speech Using Signal Processing Cues and Hidden Markov Models</title>
       <link>https://sas91.github.io/publication/ms-thesis/</link>
       <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/ms-thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Significance of pseudo-syllables in building better acoustic models for Indian English TTS</title>
+      <link>https://sas91.github.io/publication/iitm_icassp/</link>
+      <pubDate>Sun, 20 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/iitm_icassp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploration of Vowel Onset and Offset Points for Hybrid Speech Segmentation</title>
+      <link>https://sas91.github.io/publication/tencon/</link>
+      <pubDate>Sun, 01 Nov 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/tencon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blizzard Challenge 2015 : Submission by DONLab, IIT Madras</title>
+      <link>https://sas91.github.io/publication/blizzard-2015/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/blizzard-2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building Speech Synthesis Systems for Indian Languages</title>
+      <link>https://sas91.github.io/publication/ncc-2015/</link>
+      <pubDate>Fri, 27 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/ncc-2015/</guid>
       <description></description>
     </item>
     
@@ -103,11 +220,38 @@
     </item>
     
     <item>
+      <title>IIT Madras&#39;s Submission to the Blizzard Challenge 2014</title>
+      <link>https://sas91.github.io/publication/blizzard-2014/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/blizzard-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Group Delay based Phone Segmentation for HTS</title>
+      <link>https://sas91.github.io/publication/gd-ncc/</link>
+      <pubDate>Sat, 01 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/gd-ncc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>A Syllable Based Statistical Text to Speech System</title>
       <link>https://sas91.github.io/publication/syllable-hts/</link>
       <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/syllable-hts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Common Attribute based Unified HTS framework for Speech Synthesis in Indian Languages</title>
+      <link>https://sas91.github.io/publication/ssw/</link>
+      <pubDate>Thu, 01 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/ssw/</guid>
       <description></description>
     </item>
     
