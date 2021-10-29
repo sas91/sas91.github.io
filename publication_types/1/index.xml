@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Mon, 15 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sas91.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>An Exploration of Self-Supervised Pretrained Representations for End-to-End Speech Recognition</title>
+      <link>https://sas91.github.io/publication/asru-2021/</link>
+      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/asru-2021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Directional ASR: A New Paradigm for E2E Multi-Speaker Speech Recognition with Source Localization</title>
+      <link>https://sas91.github.io/publication/dasr/</link>
+      <pubDate>Sun, 06 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/dasr/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>The 2020 ESPnet Update: New Features, Broadened Applications, Performance Improvements, and Future Plans</title>
@@ -18,15 +36,6 @@
       <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/espnet-2020-update/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Directional ASR: A New Paradigm for E2E Multi-Speaker Speech Recognition with Source Localization</title>
-      <link>https://sas91.github.io/publication/dasr/</link>
-      <pubDate>Fri, 29 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://sas91.github.io/publication/dasr/</guid>
       <description></description>
     </item>
     
