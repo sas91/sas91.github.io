@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
     
 	<atom:link href="https://sas91.github.io/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>https://sas91.github.io/home/hero_carousel/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/hero_carousel/</guid>
       <description></description>
@@ -24,7 +24,7 @@
     <item>
       <title>Academic</title>
       <link>https://sas91.github.io/home/hero/</link>
-      <pubDate>Sun, 15 Oct 2017 00:00:00 -0400</pubDate>
+      <pubDate>Sun, 15 Oct 2017 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/hero/</guid>
       <description>The highly flexible website framework for Hugo with an extensible plugin mechanism. Create a beautifully simple site in under 10 minutes 🚀 Latest release   Star</description>
@@ -33,16 +33,16 @@
     <item>
       <title></title>
       <link>https://sas91.github.io/home/about/</link>
-      <pubDate>Wed, 24 Oct 2018 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 24 Oct 2018 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/about/</guid>
-      <description>I am currently a research scientist at Mitsubishi Electric Research Laboratories. I completed my PhD at Johns Hopkins University in the Center for Language and Speech Processing (CLSP), advised by Prof. Shinji Watanabe. Most recently I have been working on robust speech recognition in far-field, multi-talker scenario. My PhD dissertation focused on improving ASR with front-end processing like speech denoising, speech dereverberation, source separation, and multi-source localization. During my PhD, I proposed a paradigm called directional ASR.</description>
+      <description>I am currently a senior applied scientist in the E2E speech modeling team at Microsoft. I completed my PhD at Johns Hopkins University in the Center for Language and Speech Processing (CLSP), advised by Prof. Shinji Watanabe. Most recently I have been working on robust speech recognition in far-field, multi-talker scenario. My PhD dissertation focused on improving ASR with front-end processing like speech denoising, speech dereverberation, source separation, and multi-source localization.</description>
     </item>
     
     <item>
       <title>Skills</title>
       <link>https://sas91.github.io/home/skills/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/skills/</guid>
       <description></description>
@@ -60,7 +60,7 @@
     <item>
       <title>Selected Publications</title>
       <link>https://sas91.github.io/home/publications_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/publications_selected/</guid>
       <description></description>
@@ -69,7 +69,7 @@
     <item>
       <title>Recent Publications</title>
       <link>https://sas91.github.io/home/publications/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/publications/</guid>
       <description></description>
@@ -78,7 +78,7 @@
     <item>
       <title>Selected Talks</title>
       <link>https://sas91.github.io/home/talks_selected/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/talks_selected/</guid>
       <description></description>
@@ -87,7 +87,7 @@
     <item>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://sas91.github.io/home/talks/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/talks/</guid>
       <description></description>
@@ -96,7 +96,7 @@
     <item>
       <title>Recent Posts</title>
       <link>https://sas91.github.io/home/posts/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/posts/</guid>
       <description></description>
@@ -105,7 +105,7 @@
     <item>
       <title>Projects</title>
       <link>https://sas91.github.io/home/projects/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/projects/</guid>
       <description></description>
@@ -114,7 +114,7 @@
     <item>
       <title>Tags</title>
       <link>https://sas91.github.io/home/tags/</link>
-      <pubDate>Wed, 20 Sep 2017 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Sep 2017 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/tags/</guid>
       <description></description>
@@ -123,7 +123,7 @@
     <item>
       <title>Search</title>
       <link>https://sas91.github.io/home/search/</link>
-      <pubDate>Mon, 23 Jul 2018 00:00:00 -0400</pubDate>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/search/</guid>
       <description></description>
@@ -132,7 +132,7 @@
     <item>
       <title>Contact</title>
       <link>https://sas91.github.io/home/contact/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
       <guid>https://sas91.github.io/home/contact/</guid>
       <description></description>
