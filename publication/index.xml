@@ -148,6 +148,15 @@
     </item>
     
     <item>
+      <title>An Investigation of End-to-End Multichannel Speech Recognition for Reverberant and Mismatch Conditions</title>
+      <link>https://sas91.github.io/publication/tssep/</link>
+      <pubDate>Fri, 19 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/tssep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The Hitachi/JHU CHiME-5 system: Advances in speech recognition for everyday home environments using multiple microphone arrays</title>
       <link>https://sas91.github.io/publication/chime5-hitachi-jhu/</link>
       <pubDate>Fri, 07 Sep 2018 00:00:00 +0000</pubDate>
@@ -162,6 +171,15 @@
       <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
       
       <guid>https://sas91.github.io/publication/chime4-adv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Building state-of-the-art distant speech recognition using the CHiME-4 challenge with a setup of speech enhancement baseline</title>
+      <link>https://sas91.github.io/publication/merl-hetero/</link>
+      <pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sas91.github.io/publication/merl-hetero/</guid>
       <description></description>
     </item>
     
